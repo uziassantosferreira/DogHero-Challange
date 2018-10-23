@@ -8,4 +8,6 @@
     <string name="menu_options">Menu</string>
     
     <string name="msg_my_heroes_empty">You have not made a lodging yet nor favored a host</string>
+	<string name="title_heroes_recents">Recents</string>
+    <string name="title_heroes_favorites">Favorites</string>
 </resources>

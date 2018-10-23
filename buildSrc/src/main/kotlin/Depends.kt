@@ -13,7 +13,7 @@ object Depends {
     }
 
     object Libs {
-        const val sectionRecyclerview = "com.github.zhukic:sectioned-recyclerview:${Versions.sectionedRecyclerview}"
+        const val sectionRecyclerview = "io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:${Versions.sectionedRecyclerview}"
     }
 
     object Navigation {
