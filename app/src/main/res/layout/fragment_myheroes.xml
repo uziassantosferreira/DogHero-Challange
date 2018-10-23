@@ -13,7 +13,8 @@
             app:layoutManager="android.support.v7.widget.LinearLayoutManager"
             tools:listitem="@layout/list_item_hero"/>
 
-    <include layout="@layout/container_loading" android:id="@+id/containerLoading"/>
+    <include layout="@layout/container_loading"
+             android:id="@+id/containerLoading"/>
 
     <include layout="@layout/container_empty_view"
              android:id="@+id/containerEmptyView"
