@@ -37,6 +37,8 @@ dependencies {
     implementation(Depends.Support.appcompat)
     implementation(Depends.Support.design)
     implementation(Depends.Support.constraintLayout)
+    implementation(Depends.Support.recyclerview)
+    implementation(Depends.Libs.sectionRecyclerview)
 
     implementation(Depends.Navigation.fragment)
     implementation(Depends.Navigation.ui)

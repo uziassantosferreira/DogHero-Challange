@@ -11,5 +11,5 @@ object Versions {
     const val mockito = "2.0.0-RC3"
     const val navigationVersion = "1.0.0-alpha06"
     const val constraintLayout = "1.1.2"
-
+    const val sectionedRecyclerview = "1.2.0"
 }

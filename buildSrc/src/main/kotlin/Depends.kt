@@ -9,6 +9,11 @@ object Depends {
         const val appcompat = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
         const val design = "com.android.support:design:${Versions.supportLibrary}"
         const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
+        const val recyclerview = "com.android.support:recyclerview-v7:${Versions.supportLibrary}"
+    }
+
+    object Libs {
+        const val sectionRecyclerview = "com.github.zhukic:sectioned-recyclerview:${Versions.sectionedRecyclerview}"
     }
 
     object Navigation {
