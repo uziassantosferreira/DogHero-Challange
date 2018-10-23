@@ -1,10 +1,10 @@
 package com.doghero.features.menu
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.doghero.R
+import com.doghero.base.BaseActivity
 
-class MenuActivity : AppCompatActivity() {
+class MenuActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
