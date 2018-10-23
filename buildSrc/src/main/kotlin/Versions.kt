@@ -18,4 +18,7 @@ object Versions {
     const val gif = "1.2.15"
     const val koin = "1.0.1"
     const val lifecycle = "1.0.0"
+    const val kakao = "1.4.0"
+    const val espresso = "3.0.2-alpha1"
+    const val junit = "4.12"
 }

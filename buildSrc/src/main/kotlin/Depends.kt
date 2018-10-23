@@ -45,5 +45,8 @@ object Depends {
         const val kluent = "org.amshove.kluent:kluent:${Versions.kluent}"
         const val mockito = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockito}"
         const val archCore = "android.arch.core:core-testing:${Versions.lifecycle}"
+        const val kakao = "com.agoda.kakao:kakao:${Versions.kakao}"
+        const val espresso = "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
+        const val junit = "junit:junit:${Versions.junit}"
     }
 }
