@@ -8,6 +8,7 @@
 	<color name="grey_300">#ff7f8185</color>
 	<color name="grey_500">#ff63656a</color>
 	<color name="grey_500_60">#9663656a</color>
+    <color name="grey_200">#f1f1f1</color>
 	
     <color name="cherry_500">#ffef3a5d</color>
 	<color name="cherry_700">#ffc4304d</color>

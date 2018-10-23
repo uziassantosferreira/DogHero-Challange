@@ -6,4 +6,4 @@
         android:layout_height="wrap_content"
         tools:text="Test"
         style="@style/TextView.Header"
-        android:padding="@dimen/medium_space"/>
+        android:paddingLeft="@dimen/medium_space"/>

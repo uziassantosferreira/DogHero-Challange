@@ -6,6 +6,7 @@ import android.view.View
 import com.doghero.R
 import com.doghero.base.BaseFragment
 import com.doghero.exception.PresentationFailure
+import com.doghero.util.VerticalSpaceItemDecoration
 import io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapter
 import kotlinx.android.synthetic.main.container_empty_view.view.*
 import kotlinx.android.synthetic.main.fragment_myheroes.*
@@ -23,7 +24,7 @@ class MyHeroesFragment: BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerView.adapter = adapter
-
+        recyclerView.addItemDecoration(VerticalSpaceItemDecoration(R.dimen.medium_space))
         subscribeToHeroes()
         getHeroes.loadHeroes()
     }

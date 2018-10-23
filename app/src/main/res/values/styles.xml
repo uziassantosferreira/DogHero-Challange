@@ -6,7 +6,7 @@
 	    <item name="colorAccent">@color/cherry_500</item>
 	    <item name="colorPrimary">@color/grey_300</item>
 	    <item name="colorPrimaryDark">@color/grey_300</item>
-	    
+        <item name="android:windowBackground">@color/grey_200</item>
     </style>
 	
 	<style name="DogHeroToolbar">

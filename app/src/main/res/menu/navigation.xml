@@ -16,5 +16,5 @@
 	      android:icon="@drawable/ic_reservation"/>
 	<item android:id="@+id/fragmentOptions"
 			android:title="@string/menu_options"
-	      android:icon="@drawable/ic_person"/>
+	      android:icon="@drawable/ic_option"/>
 </menu>

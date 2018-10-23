@@ -10,7 +10,9 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingTop="@dimen/medium_space"
             app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:paddingBottom="@dimen/medium_space"
             tools:listitem="@layout/list_item_hero"/>
 
     <include layout="@layout/container_loading"
