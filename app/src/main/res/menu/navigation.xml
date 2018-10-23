@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
 	
-	<item android:id="@+id/actionSearch"
+	<item android:id="@+id/fragmentSearch"
 			android:title="@string/menu_search"
 	android:icon="@drawable/ic_search"/>
 	<item
-			android:id="@+id/actionMessages"
+			android:id="@+id/fragmentMessages"
 			android:title="@string/menu_messages"
 	      android:icon="@drawable/ic_message"/>
-	<item android:id="@+id/actionMyHeroes"
+	<item android:id="@+id/fragmentMyHeroes"
 			android:title="@string/menu_heroes"
 	      android:icon="@drawable/ic_hero"/>
-	<item android:id="@+id/actionReservations"
+	<item android:id="@+id/fragmentReservations"
 			android:title="@string/menu_reservations"
 	      android:icon="@drawable/ic_reservation"/>
-	<item android:id="@+id/actionOptions"
+	<item android:id="@+id/fragmentOptions"
 			android:title="@string/menu_options"
 	      android:icon="@drawable/ic_person"/>
 </menu>
