@@ -8,6 +8,7 @@ import com.doghero.domain.rxjava.requestvalue.RequestValues
 import com.doghero.domain.rxjava.usecase.GetMyHeroes
 import com.doghero.domain.rxjava.usecase.UseCase
 import com.doghero.exception.PresentationFailure
+import com.doghero.mapper.PresentationExceptionMapper
 import com.doghero.mapper.PresentationMyHeroesMapper
 import com.doghero.model.PresentationCategory
 import com.doghero.model.PresentationHero
@@ -27,7 +28,7 @@ class GetHeroesViewModel(private val getMyHeroes: UseCase<RequestValues,
                 .map(PresentationMyHeroesMapper::transformTo)
                 .subscribeBy(
                     onError = {
-                        handleFailure(PresentationFailure.Network)
+                        handleFailure(PresentationExceptionMapper.transformTo(it))
                     },
                     onNext = {
                         heroes.value = it

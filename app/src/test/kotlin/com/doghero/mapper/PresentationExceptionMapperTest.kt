@@ -1,20 +1,19 @@
-package com.doghero.data.mapper
+package com.doghero.mapper
 
 import com.doghero.domain.rxjava.exception.DomainThrowable
 import com.doghero.domain.rxjava.exception.Failure
-import com.doghero.domain.rxjava.model.Category
+import com.doghero.exception.PresentationFailure
 import org.amshove.kluent.shouldEqual
 import org.amshove.kluent.shouldThrow
 import org.junit.Test
-import java.net.UnknownHostException
 
-class ExceptionMapperTest {
+class PresentationExceptionMapperTest {
     private val exceptions = hashMapOf(
-        Pair(UnknownHostException(), DomainThrowable(Failure.Network)),
-        Pair(Exception(), DomainThrowable()))
+        Pair(DomainThrowable(Failure.Network), PresentationFailure.Network),
+        Pair(Throwable(), PresentationFailure.Generic))
 
     @Test
-    fun `should be correctly transform and expected domain`() {
+    fun `should be correctly transform and expected presentation`() {
         exceptions.forEach { remote, domain ->
             correctlyTransform(domain, remote)
         }
@@ -28,16 +27,16 @@ class ExceptionMapperTest {
     }
 
     private fun correctlyTransform(
-        expected: DomainThrowable,
+        expected: PresentationFailure,
         current: Throwable
     ) {
-        val remote = ExceptionMapper.transformTo(current)
+        val remote = PresentationExceptionMapper.transformTo(current)
 
-        remote.failure shouldEqual expected.failure
+        remote shouldEqual expected
     }
 
-    private fun correctlyThrow(current: DomainThrowable) {
-        val remote = { ExceptionMapper.transformFrom(current) }
+    private fun correctlyThrow(current: PresentationFailure) {
+        val remote = { PresentationExceptionMapper.transformFrom(current) }
 
         remote shouldThrow NotImplementedError::class
     }
