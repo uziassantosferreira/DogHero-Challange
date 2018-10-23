@@ -1,6 +1,7 @@
 package com.doghero.data.datasource
 
 import com.doghero.data.api.HeroService
+import com.doghero.data.mapper.ExceptionMapper
 import com.doghero.data.mapper.JsonHeroMapper
 import com.doghero.domain.rxjava.model.Category
 import com.doghero.domain.rxjava.model.Hero
@@ -20,6 +21,8 @@ class HeroDatasourceImpl(private val heroService: HeroService): HeroDatasource {
                     hash.put(Category.FAVORITES, JsonHeroMapper.transformFromList(it))
                 }
                 hash
-        }
+        }.onErrorResumeNext {  throwable: Throwable ->
+                    Flowable.error(ExceptionMapper.transformTo(throwable))
+            }
     }
 }
