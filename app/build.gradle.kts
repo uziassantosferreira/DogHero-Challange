@@ -40,9 +40,14 @@ dependencies {
     implementation(Depends.Support.recyclerview)
     implementation(Depends.Libs.sectionRecyclerview)
     implementation(Depends.Libs.circleimageview)
+    implementation(Depends.Libs.glide)
+    annotationProcessor(Depends.Libs.glidecompiler)
 
     implementation(Depends.Navigation.fragment)
     implementation(Depends.Navigation.ui)
+    implementation(Depends.Rx.kotlin)
+    implementation(Depends.Rx.android)
 
     implementation(project(":domainRxJava"))
+    implementation(project(":data"))
 }

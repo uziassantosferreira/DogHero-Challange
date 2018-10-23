@@ -15,6 +15,9 @@ object Depends {
     object Libs {
         const val sectionRecyclerview = "io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:${Versions.sectionedRecyclerview}"
         const val circleimageview = "de.hdodenhof:circleimageview:${Versions.circleimageview}"
+
+        const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+        const val glidecompiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
     }
 
     object Navigation {
@@ -24,6 +27,7 @@ object Depends {
 
     object Rx {
         const val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
+        const val android = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
     }
 
     object Test {

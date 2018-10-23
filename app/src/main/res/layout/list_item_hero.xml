@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/medium_space">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
             android:id="@+id/imageViewUser"
             android:layout_width="@dimen/image_space"
             android:layout_height="@dimen/image_space"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="@+id/imageViewUser"
             app:layout_constraintStart_toEndOf="@+id/imageViewUser"
             tools:text="Alex"
-            app:layout_constraintEnd_toStartOf="@+id/textViewValue"/>
+            app:layout_constraintEnd_toStartOf="@+id/textViewPrice"/>
 
     <TextView
             style="@style/TextView.Neighborhood"
@@ -54,7 +54,7 @@
             tools:text="R$ 180"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewValue"
+            android:id="@+id/textViewPrice"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textViewPerNight"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewValue"/>
+            app:layout_constraintTop_toBottomOf="@+id/textViewPrice"/>
 
     <Button
             style="@style/Button.Primary"
