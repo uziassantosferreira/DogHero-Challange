@@ -10,7 +10,7 @@
             android:id="@+id/imageViewEmptyView"
             android:layout_width="@dimen/image_space"
             android:src="@drawable/ic_dog"
-            android:layout_height="@dimen/image_space" />
+            android:layout_height="@dimen/image_space"/>
 
     <TextView
             android:id="@+id/textViewEmptyView"

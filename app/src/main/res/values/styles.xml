@@ -37,7 +37,6 @@
         <item name="android:textColor">@color/black_42</item>
     </style>
 
-
     <style name="TextView.Price">
         <item name="android:textSize">@dimen/my_heroes_text_big</item>
         <item name="android:textColor">@color/black_66</item>
@@ -45,6 +44,11 @@
     </style>
 
     <style name="TextView.Name" parent="TextView.Price" />
+
+    <style name="TextView.Header">
+        <item name="android:textSize">@dimen/my_heroes_text_medium</item>
+        <item name="android:textColor">@color/black_66</item>
+    </style>
 
     <style name="TextView.Neighborhood">
         <item name="android:textSize">@dimen/my_heroes_text_medium</item>
