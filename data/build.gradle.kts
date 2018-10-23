@@ -45,4 +45,8 @@ dependencies {
     implementation(Depends.Retrofit.logginginterceptor)
 
     implementation(project(":domainRxJava"))
+
+    testImplementation(Depends.Test.kluent)
+    testImplementation(Depends.Test.mockito)
+    testImplementation(Depends.Test.junit)
 }

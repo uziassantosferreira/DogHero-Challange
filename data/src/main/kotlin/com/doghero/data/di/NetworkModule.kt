@@ -24,9 +24,11 @@ val networkModule = module {
 
     single<Gson> { GsonBuilder().create() }
 
-    single<OkHttpClient> { OkHttpClient.Builder()
+    single<OkHttpClient> {
+        OkHttpClient.Builder()
         .addInterceptor(get())
-        .build() }
+        .build()
+    }
 
 
     single<Interceptor> {

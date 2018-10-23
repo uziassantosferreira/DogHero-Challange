@@ -12,11 +12,12 @@ class HeroDatasourceImpl(private val heroService: HeroService): HeroDatasource {
         return heroService.getHeroes()
             .map {
                 val hash = hashMapOf<Category, List<Hero>>()
-                it.favorites?.let {
-                    hash.put(Category.FAVORITES, JsonHeroMapper.transformFromList(it))
-                }
                 it.recents?.let {
                     hash.put(Category.RECENTS, JsonHeroMapper.transformFromList(it))
+                }
+
+                it.favorites?.let {
+                    hash.put(Category.FAVORITES, JsonHeroMapper.transformFromList(it))
                 }
                 hash
         }
