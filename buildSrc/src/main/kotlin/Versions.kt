@@ -17,4 +17,5 @@ object Versions {
     const val glide = "4.8.0"
     const val gif = "1.2.15"
     const val koin = "1.0.1"
+    const val lifecycle = "1.0.0"
 }

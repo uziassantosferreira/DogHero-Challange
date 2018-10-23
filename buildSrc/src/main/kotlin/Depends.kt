@@ -12,6 +12,10 @@ object Depends {
         const val recyclerview = "com.android.support:recyclerview-v7:${Versions.supportLibrary}"
     }
 
+    object Lifecycle {
+        const val extensions = "android.arch.lifecycle:extensions:${Versions.lifecycle}"
+        const val compiler = "android.arch.lifecycle:compiler:${Versions.lifecycle}"
+    }
     object Libs {
         const val sectionRecyclerview = "io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:${Versions.sectionedRecyclerview}"
         const val circleimageview = "de.hdodenhof:circleimageview:${Versions.circleimageview}"
@@ -40,5 +44,6 @@ object Depends {
     object Test {
         const val kluent = "org.amshove.kluent:kluent:${Versions.kluent}"
         const val mockito = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockito}"
+        const val archCore = "android.arch.core:core-testing:${Versions.lifecycle}"
     }
 }

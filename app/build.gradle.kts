@@ -41,7 +41,7 @@ dependencies {
     implementation(Depends.Libs.sectionRecyclerview)
     implementation(Depends.Libs.circleimageview)
     implementation(Depends.Libs.glide)
-    annotationProcessor(Depends.Libs.glidecompiler)
+    kapt(Depends.Libs.glidecompiler)
     implementation(Depends.Libs.gif)
     implementation(Depends.Navigation.fragment)
     implementation(Depends.Navigation.ui)
@@ -50,7 +50,13 @@ dependencies {
     implementation(Depends.Koin.android)
     implementation(Depends.Koin.scope)
     implementation(Depends.Koin.viewmodel)
+    implementation(Depends.Lifecycle.extensions)
+    kapt(Depends.Lifecycle.compiler)
 
     implementation(project(":domainRxJava"))
     implementation(project(":data"))
+
+    testImplementation(Depends.Test.kluent)
+    testImplementation(Depends.Test.mockito)
+    testImplementation(Depends.Test.archCore)
 }
