@@ -15,4 +15,5 @@ object Versions {
     const val sectionedRecyclerview = "1.2.0"
     const val circleimageview = "2.2.0"
     const val glide = "4.8.0"
+    const val gif = "1.2.15"
 }

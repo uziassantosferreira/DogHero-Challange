@@ -7,6 +7,7 @@
 	<dimen name="medium_space">16dp</dimen>
 
 	<dimen name="image_space">64dp</dimen>
+	<dimen name="image_gif_space">120dp</dimen>
 	<dimen name="image_super_hero_space">24dp</dimen>
 
 	<dimen name="my_heroes_text_small">12sp</dimen>

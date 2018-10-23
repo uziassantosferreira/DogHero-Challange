@@ -42,7 +42,7 @@ dependencies {
     implementation(Depends.Libs.circleimageview)
     implementation(Depends.Libs.glide)
     annotationProcessor(Depends.Libs.glidecompiler)
-
+    implementation(Depends.Libs.gif)
     implementation(Depends.Navigation.fragment)
     implementation(Depends.Navigation.ui)
     implementation(Depends.Rx.kotlin)

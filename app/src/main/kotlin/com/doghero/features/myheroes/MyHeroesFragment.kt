@@ -29,12 +29,20 @@ class MyHeroesFragment: BaseFragment() {
     }
 
     private fun subscribeToHeroes() {
+        containerLoading.visibility = View.VISIBLE
         viewModel.heroes.observe(this,
             Observer { hash ->
+                containerLoading.visibility = View.GONE
                 hash?.let { it ->
                     it.forEach {
                     adapter.addSection(HeroesSection(it.key, it.value, this))
                 }
+            }
+        })
+
+        viewModel.failure.observe(this, Observer {
+            it?.let {
+
             }
         })
     }

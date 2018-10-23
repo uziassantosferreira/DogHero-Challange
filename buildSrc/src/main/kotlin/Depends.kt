@@ -18,6 +18,7 @@ object Depends {
 
         const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
         const val glidecompiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+        const val gif = "pl.droidsonroids.gif:android-gif-drawable:${Versions.gif}"
     }
 
     object Navigation {
