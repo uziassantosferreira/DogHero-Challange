@@ -37,5 +37,8 @@ dependencies {
     implementation(Depends.Support.appcompat)
     implementation(Depends.Support.design)
 
+    implementation(Depends.Navigation.fragment)
+    implementation(Depends.Navigation.ui)
+
     implementation(project(":domainRxJava"))
 }

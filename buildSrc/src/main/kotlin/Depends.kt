@@ -1,3 +1,5 @@
+
+
 object Depends {
     object Kotlin {
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
@@ -6,6 +8,11 @@ object Depends {
     object Support {
         const val appcompat = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
         const val design = "com.android.support:design:${Versions.supportLibrary}"
+    }
+
+    object Navigation {
+        const val fragment = "android.arch.navigation:navigation-fragment:${Versions.navigationVersion}"
+        const val ui = "android.arch.navigation:navigation-ui:${Versions.navigationVersion}"
     }
 
     object Rx {

@@ -9,5 +9,6 @@ object Versions {
     const val supportLibrary = "28.0.0"
     const val kluent = "1.42"
     const val mockito = "2.0.0-RC3"
+    const val navigationVersion = "1.0.0-alpha06"
 
 }

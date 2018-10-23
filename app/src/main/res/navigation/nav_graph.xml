@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph" app:startDestination="@id/actionMyHeroes">
+	
+	<fragment android:id="@+id/actionReservations"
+	          android:name="com.doghero.features.reservations.ReservationsFragment"
+	          android:label="@string/menu_reservations"
+	tools:layout="@layout/fragment_reservation"/>
+	
+	<fragment android:id="@+id/actionMessages" android:name="com.doghero.features.messages.MessagesFragment"
+	          android:label="@string/menu_messages"
+	          tools:layout="@layout/fragment_messages"/>
+	
+	<fragment android:id="@+id/actionOptions" android:name="com.doghero.features.options.OptionsFragment"
+	          android:label="@string/menu_options"
+	          tools:layout="@layout/fragment_options"/>
+	
+	<fragment android:id="@+id/actionSearch" android:name="com.doghero.features.search.SearchFragment"
+	          android:label="@string/menu_search"
+	          tools:layout="@layout/fragment_search"/>
+	
+	<fragment android:id="@+id/actionMyHeroes" android:name="com.doghero.features.myheroes.MyHeroesFragment"
+	          android:label="@string/menu_heroes"
+	          tools:layout="@layout/fragment_myheroes"/>
+	
+</navigation>
