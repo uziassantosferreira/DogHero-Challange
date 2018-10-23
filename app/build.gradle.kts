@@ -36,6 +36,7 @@ dependencies {
     implementation(Depends.Kotlin.stdlib)
     implementation(Depends.Support.appcompat)
     implementation(Depends.Support.design)
+    implementation(Depends.Support.constraintLayout)
 
     implementation(Depends.Navigation.fragment)
     implementation(Depends.Navigation.ui)
