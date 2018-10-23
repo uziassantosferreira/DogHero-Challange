@@ -49,4 +49,7 @@ dependencies {
     testImplementation(Depends.Test.kluent)
     testImplementation(Depends.Test.mockito)
     testImplementation(Depends.Test.junit)
+    testImplementation(Depends.Test.mockwebserver)
+    testImplementation(Depends.Test.koin)
+
 }

@@ -55,5 +55,7 @@ object Depends {
         const val kakao = "com.agoda.kakao:kakao:${Versions.kakao}"
         const val espresso = "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
         const val junit = "junit:junit:${Versions.junit}"
+        const val mockwebserver = "com.squareup.okhttp:mockwebserver:${Versions.mockwebserver}"
+        const val koin = "org.koin:koin-test:${Versions.koin}"
     }
 }

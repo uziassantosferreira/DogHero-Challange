@@ -23,4 +23,5 @@ object Versions {
     const val junit = "4.12"
     const val retrofit = "2.4.0"
     const val logging = "3.8.0"
+    const val mockwebserver = "2.7.5"
 }
