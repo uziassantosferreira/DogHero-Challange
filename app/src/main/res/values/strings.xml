@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DogHero</string>
+    
+    <string name="menu_search">Search</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_heroes">Heroes</string>
+    <string name="menu_reservations">Reservations</string>
+    <string name="menu_options">Menu</string>
 </resources>
