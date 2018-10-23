@@ -39,6 +39,7 @@ dependencies {
     implementation(Depends.Support.constraintLayout)
     implementation(Depends.Support.recyclerview)
     implementation(Depends.Libs.sectionRecyclerview)
+    implementation(Depends.Libs.circleimageview)
 
     implementation(Depends.Navigation.fragment)
     implementation(Depends.Navigation.ui)

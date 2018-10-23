@@ -10,4 +10,9 @@
     <string name="msg_my_heroes_empty">You have not made a lodging yet nor favored a host</string>
 	<string name="title_heroes_recents">Recents</string>
     <string name="title_heroes_favorites">Favorites</string>
+
+    <string name="msg_reservation">Reservation</string>
+    <string name="msg_contact">Contact</string>
+    <string name="msg_per_night">Por noite</string>
+    <string name="msg_super_hero">This user is super hero</string>
 </resources>

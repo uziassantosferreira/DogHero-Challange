@@ -12,4 +12,5 @@ object Versions {
     const val navigationVersion = "1.0.0-alpha06"
     const val constraintLayout = "1.1.2"
     const val sectionedRecyclerview = "1.2.0"
+    const val circleimageview = "2.2.0"
 }

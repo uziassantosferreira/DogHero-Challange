@@ -9,8 +9,47 @@
 	    
     </style>
 	
-	<style name="DogHeroToolbar" >
+	<style name="DogHeroToolbar">
 		<item name="android:background">@android:color/white</item>
 	</style>
+
+	<style name="Button">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/button_text_size</item>
+		<item name="android:minHeight">@dimen/button_min_height</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+	<style name="Button.Primary">
+		<item name="android:textColor">@color/cherry_500</item>
+		<item name="android:background">@drawable/button_primary</item>
+	</style>
+    
+	<style name="Button.Secondary">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:background">@drawable/button_secondary</item>
+	</style>
+    
+    <style name="TextView" />
+
+    <style name="TextView.PerNight">
+        <item name="android:textSize">@dimen/my_heroes_text_small</item>
+        <item name="android:textColor">@color/black_42</item>
+    </style>
+
+
+    <style name="TextView.Price">
+        <item name="android:textSize">@dimen/my_heroes_text_big</item>
+        <item name="android:textColor">@color/black_66</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Name" parent="TextView.Price" />
+
+    <style name="TextView.Neighborhood">
+        <item name="android:textSize">@dimen/my_heroes_text_medium</item>
+        <item name="android:textColor">@color/black_42</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 
 </resources>

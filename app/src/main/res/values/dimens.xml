@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<dimen name="toolbar_elevation">4dp</dimen>
+	<dimen name="button_text_size">14sp</dimen>
+	<dimen name="button_min_height">40dp</dimen>
+	<dimen name="space_between_buttons">4dp</dimen>
+	<dimen name="medium_space">16dp</dimen>
+
+	<dimen name="image_space">64dp</dimen>
+	<dimen name="image_super_hero_space">24dp</dimen>
+
+	<dimen name="my_heroes_text_small">12sp</dimen>
+	<dimen name="my_heroes_text_big">18sp</dimen>
+	<dimen name="my_heroes_text_medium">14sp</dimen>
 </resources>

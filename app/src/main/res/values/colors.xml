@@ -11,4 +11,11 @@
 	
     <color name="cherry_500">#ffef3a5d</color>
 	<color name="cherry_700">#ffc4304d</color>
+    <color name="cherry_100">#fff9b7c4</color>
+
+    <color name="black_10">#19000000</color>
+    <color name="black_42">#6b000000</color>
+    <color name="black_66">#a8000000</color>
+
+    <color name="transparent">#00ffffff</color>
 </resources>

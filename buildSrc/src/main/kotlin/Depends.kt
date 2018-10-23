@@ -14,6 +14,7 @@ object Depends {
 
     object Libs {
         const val sectionRecyclerview = "io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:${Versions.sectionedRecyclerview}"
+        const val circleimageview = "de.hdodenhof:circleimageview:${Versions.circleimageview}"
     }
 
     object Navigation {
