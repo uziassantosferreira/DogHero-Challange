@@ -63,7 +63,7 @@ class GetHeroesViewModelTest {
 
         val expectedResult = MutableLiveData<PresentationFailure>()
 
-        expectedResult.value = PresentationFailure.Network
+        expectedResult.value = PresentationFailure.Generic
 
         viewModel.loadHeroes()
 
