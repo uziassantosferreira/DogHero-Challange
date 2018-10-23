@@ -6,4 +6,6 @@
     <string name="menu_heroes">Heroes</string>
     <string name="menu_reservations">Reservations</string>
     <string name="menu_options">Menu</string>
+    
+    <string name="msg_my_heroes_empty">You have not made a lodging yet nor favored a host</string>
 </resources>
