@@ -6,6 +6,8 @@ import android.view.View
 import com.doghero.R
 import com.doghero.base.BaseFragment
 import com.doghero.exception.PresentationFailure
+import com.doghero.model.PresentationCategory
+import com.doghero.model.PresentationHero
 import com.doghero.util.VerticalSpaceItemDecoration
 import io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapter
 import kotlinx.android.synthetic.main.container_empty_view.view.*
@@ -34,13 +36,13 @@ class MyHeroesFragment: BaseFragment() {
         getHeroes.heroes.observe(this,
             Observer { hash ->
                 containerLoading.visibility = View.GONE
-                hash?.let { it ->
-                    if (it.isEmpty()){
+                hash?.let {
+                    if (hash.isEmpty()){
                         showEmptyView()
                         return@let
                     }
-                    it.forEach {
-                    adapter.addSection(HeroesSection(it.key, it.value, this))
+                    sortedCategories(hash).forEach {
+                    adapter.addSection(HeroesSection(it, hash[it]!!, this))
                 }
             }
         })
@@ -51,6 +53,10 @@ class MyHeroesFragment: BaseFragment() {
                 showErrorView(it)
             }
         })
+    }
+
+    private fun sortedCategories(hash: HashMap<PresentationCategory, List<PresentationHero>>): List<PresentationCategory> {
+        return hash.keys.sortedBy { it != PresentationCategory.RECENTS }
     }
 
     private fun showEmptyView() {

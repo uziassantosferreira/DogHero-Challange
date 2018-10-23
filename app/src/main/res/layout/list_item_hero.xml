@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textViewName"
             android:layout_marginLeft="@dimen/medium_space"
-            app:layout_constraintTop_toTopOf="@+id/imageViewUser"
+            app:layout_constraintTop_toTopOf="@+id/likeButtonView"
             app:layout_constraintStart_toEndOf="@+id/imageViewUser"
             tools:text="Alex"
             app:layout_constraintEnd_toStartOf="@+id/textViewPrice"/>
@@ -50,6 +50,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textViewNeighborhood"/>
+
+
+    <com.doghero.util.like.LikeButtonView
+            android:layout_width="@dimen/image_super_hero_space"
+            android:layout_height="@dimen/image_super_hero_space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/likeButtonView"/>
+
     <TextView
             style="@style/TextView.Price"
             tools:text="R$ 180"
@@ -57,7 +66,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textViewPrice"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/likeButtonView"/>
 
     <TextView
             style="@style/TextView.PerNight"

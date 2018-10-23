@@ -5,9 +5,7 @@ import com.doghero.base.BaseViewModel
 import com.doghero.domain.rxjava.model.Category
 import com.doghero.domain.rxjava.model.Hero
 import com.doghero.domain.rxjava.requestvalue.RequestValues
-import com.doghero.domain.rxjava.usecase.GetMyHeroes
 import com.doghero.domain.rxjava.usecase.UseCase
-import com.doghero.exception.PresentationFailure
 import com.doghero.mapper.PresentationExceptionMapper
 import com.doghero.mapper.PresentationMyHeroesMapper
 import com.doghero.model.PresentationCategory

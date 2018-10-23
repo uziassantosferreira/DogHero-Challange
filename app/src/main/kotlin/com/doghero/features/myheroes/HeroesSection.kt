@@ -3,7 +3,6 @@ package com.doghero.features.myheroes
 import android.support.v4.app.Fragment
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import android.view.ViewGroup
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -36,7 +35,7 @@ class HeroesSection(private val category: PresentationCategory,
                 .apply(RequestOptions.circleCropTransform()
                     .placeholder(R.drawable.ic_person))
                 .into(holder.itemView.imageViewUser)
-
+            it.likeButtonView.visibility = if(category == PresentationCategory.FAVORITES) View.VISIBLE else View.GONE
             it.imageViewSuperHero.visibility = if(hero.isSuperHero) View.VISIBLE else View.GONE
         }
     }
