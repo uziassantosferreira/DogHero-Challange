@@ -1,13 +1,18 @@
 object Depends {
     object Kotlin {
-        val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+        const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     }
 
     object Support {
-        val appcompat = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
+        const val appcompat = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
     }
 
     object Rx {
-        val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
+        const val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
+    }
+
+    object Test {
+        const val kluent = "org.amshove.kluent:kluent:${Versions.kluent}"
+        const val mockito = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockito}"
     }
 }

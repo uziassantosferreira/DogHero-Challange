@@ -7,5 +7,7 @@ object Versions {
     const val versionCode = 1
     const val rxKotlin = "2.3.0"
     const val supportLibrary = "28.0.0"
+    const val kluent = "1.42"
+    const val mockito = "2.0.0-RC3"
 
 }
