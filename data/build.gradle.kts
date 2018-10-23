@@ -1,7 +1,8 @@
+
 import org.jetbrains.kotlin.config.KotlinCompilerVersion
 
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("kotlin-android")
     id("kotlin-android-extensions")
 }
@@ -9,7 +10,6 @@ plugins {
 android {
     compileSdkVersion(28)
     defaultConfig {
-        applicationId = "com.doghero"
         minSdkVersion(19)
         targetSdkVersion(28)
         versionCode = 1

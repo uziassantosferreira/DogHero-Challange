@@ -1,3 +1,1 @@
-rootProject.buildFileName = "build.gradle.kts"
-
-include(":app")
+include(":app", ":domainRxJava", ":data")
