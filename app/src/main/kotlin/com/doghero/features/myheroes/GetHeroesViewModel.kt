@@ -24,7 +24,7 @@ class GetHeroesViewModel(private val getMyHeroes: GetMyHeroes) : BaseViewModel()
                         handleFailure(PresentationFailure.Network)
                     },
                     onNext = {
-                        handleFailure(PresentationFailure.Network)
+                        heroes.value = it
                     }
                 )
         )

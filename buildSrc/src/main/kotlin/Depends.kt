@@ -21,6 +21,12 @@ object Depends {
         const val gif = "pl.droidsonroids.gif:android-gif-drawable:${Versions.gif}"
     }
 
+    object Koin {
+        const val android = "org.koin:koin-android:${Versions.koin}"
+        const val scope =  "org.koin:koin-android-scope:${Versions.koin}"
+        const val viewmodel = "org.koin:koin-android-viewmodel:${Versions.koin}"
+    }
+
     object Navigation {
         const val fragment = "android.arch.navigation:navigation-fragment:${Versions.navigationVersion}"
         const val ui = "android.arch.navigation:navigation-ui:${Versions.navigationVersion}"

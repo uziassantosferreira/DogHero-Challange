@@ -47,6 +47,9 @@ dependencies {
     implementation(Depends.Navigation.ui)
     implementation(Depends.Rx.kotlin)
     implementation(Depends.Rx.android)
+    implementation(Depends.Koin.android)
+    implementation(Depends.Koin.scope)
+    implementation(Depends.Koin.viewmodel)
 
     implementation(project(":domainRxJava"))
     implementation(project(":data"))

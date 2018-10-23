@@ -5,20 +5,18 @@ import android.os.Bundle
 import android.view.View
 import com.doghero.R
 import com.doghero.base.BaseFragment
-import com.doghero.data.HeroRepositoryImpl
-import com.doghero.domain.rxjava.usecase.GetMyHeroes
 import com.doghero.exception.PresentationFailure
 import io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapter
 import kotlinx.android.synthetic.main.container_empty_view.view.*
 import kotlinx.android.synthetic.main.fragment_myheroes.*
+import org.koin.android.ext.android.inject
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class MyHeroesFragment: BaseFragment() {
 
-    private val adapter = SectionedRecyclerViewAdapter()
+    private val adapter: SectionedRecyclerViewAdapter by inject()
 
-    private val repository = HeroRepositoryImpl()
-    private val getMyHeroes = GetMyHeroes(repository)
-    private val viewModel = GetHeroesViewModel(getMyHeroes)
+    private val getHeroes: GetHeroesViewModel by viewModel()
 
     override fun layoutId(): Int = R.layout.fragment_myheroes
 
@@ -27,12 +25,12 @@ class MyHeroesFragment: BaseFragment() {
         recyclerView.adapter = adapter
 
         subscribeToHeroes()
-        viewModel.loadHeroes()
+        getHeroes.loadHeroes()
     }
 
     private fun subscribeToHeroes() {
         containerLoading.visibility = View.VISIBLE
-        viewModel.heroes.observe(this,
+        getHeroes.heroes.observe(this,
             Observer { hash ->
                 containerLoading.visibility = View.GONE
                 hash?.let { it ->
@@ -46,7 +44,7 @@ class MyHeroesFragment: BaseFragment() {
             }
         })
 
-        viewModel.failure.observe(this, Observer {
+        getHeroes.failure.observe(this, Observer {
             containerLoading.visibility = View.GONE
             it?.let {
                 showErrorView(it)
