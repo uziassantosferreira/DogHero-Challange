@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DogHero</string>
+    
+    <string name="menu_search">Busca</string>
+    <string name="menu_messages">Mensagens</string>
+    <string name="menu_heroes">Heróis</string>
+    <string name="menu_reservations">Reservas</string>
+    <string name="menu_options">Perfil</string>
+    
+    <string name="msg_my_heroes_empty">Você ainda não fez uma hospedagem e nem favoritou um anfitrião</string>
+	<string name="title_heroes_recents">Heróis com quem hospedei</string>
+    <string name="title_heroes_favorites">Heróis favoritos</string>
+
+    <string name="msg_reservation">Reservar</string>
+    <string name="msg_contact">Conversar</string>
+    <string name="msg_per_night">por noite</string>
+    <string name="msg_super_hero">Esse usuário é um super herói</string>
+    <string name="msg_loading_heroes">Carregando heróis...</string>
+    <string name="msg_error_network">Não foi possível completar esta operação no momento. Verifique sua conexão com a internet e tente novamente!</string>
+    <string name="msg_error">Não foi possível completar esta operação no momento.</string>
+
+</resources>
