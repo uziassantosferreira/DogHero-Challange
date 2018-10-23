@@ -8,6 +8,7 @@ Supported language: <img src="flags/uk_flag.png" width=20> <img src="flags/brazi
 2. [Architecture](#architecture)
    * [Clean Architecture](#clean-architecture)
    * [Frameworks](#frameworks)
+3. [TODO](#todo)  
 4. [License](#license)
 
 
@@ -156,6 +157,15 @@ Kluent is a "Fluent Assertions" library written specifically for Kotlin.
 * [kakao](https://github.com/agoda-com/Kakao)
 Nice and simple DSL for Espresso in Kotlin
 
+## TODO
+
+* [Explain more about the architecture diagrams in README file.](#)
+* [Improve and add more unit and instrumentation tests](#)
+* [Improve viewmodel to more reactive like add behaviours](#)
+* [Add static analysis tools](#)
+* [Add CI](#)
+* [Remove dependency circleview and use only glide](#)
+* [Add jacoco to generate report about code coverage](#)
 
 <a name="license" />
 
