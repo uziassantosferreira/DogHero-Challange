@@ -31,6 +31,13 @@ object Depends {
         const val viewmodel = "org.koin:koin-android-viewmodel:${Versions.koin}"
     }
 
+    object Retrofit {
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+        const val adapter = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
+        const val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+        const val logginginterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.logging}"
+    }
+
     object Navigation {
         const val fragment = "android.arch.navigation:navigation-fragment:${Versions.navigationVersion}"
         const val ui = "android.arch.navigation:navigation-ui:${Versions.navigationVersion}"

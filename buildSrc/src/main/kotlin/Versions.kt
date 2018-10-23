@@ -21,4 +21,6 @@ object Versions {
     const val kakao = "1.4.0"
     const val espresso = "3.0.2-alpha1"
     const val junit = "4.12"
+    const val retrofit = "2.4.0"
+    const val logging = "3.8.0"
 }

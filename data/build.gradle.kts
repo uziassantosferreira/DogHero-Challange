@@ -38,5 +38,11 @@ dependencies {
     implementation(Depends.Rx.kotlin)
     implementation(Depends.Rx.android)
 
+    implementation(Depends.Koin.android)
+    implementation(Depends.Retrofit.retrofit)
+    implementation(Depends.Retrofit.adapter)
+    implementation(Depends.Retrofit.gson)
+    implementation(Depends.Retrofit.logginginterceptor)
+
     implementation(project(":domainRxJava"))
 }
